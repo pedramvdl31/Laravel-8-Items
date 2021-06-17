@@ -26,6 +26,6 @@ Route::prefix('/item')->group(function () {
 
 	Route::post('/store', [ItemContoller::class, 'store']);
 	Route::put('/{id}', [ItemContoller::class, 'update']);
-	Route::delete()('/{id}', [ItemContoller::class, 'destroy']);
+	Route::delete('/{id}', [ItemContoller::class, 'destroy']);
 
-})
+});
